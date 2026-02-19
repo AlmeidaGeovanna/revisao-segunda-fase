@@ -1,0 +1,6 @@
+let numero = Number(prompt("Digite um número: "))
+let contador = 0
+while (contador < 10) {
+    contador++
+    console.log(numero*contador)
+}
