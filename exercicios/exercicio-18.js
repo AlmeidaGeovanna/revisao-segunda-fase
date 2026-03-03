@@ -1,15 +1,11 @@
-const numeros = [3,7,15,19,53,9,25,30,34,6];
+const usuarios = [
+  { nome: "Iris", sobrenome: "Silva"},
+  { nome: "Henrique", sobrenome: "Celso"},
+  { nome: "Pedro", sobrenome: "Hauer"},
+  { nome: "Adriana", sobrenome: "Pereira"},
+];
 
-const resultado = numeros.map(numero => {
-  if (numero % 3 === 0 && numero % 5 === 0) {
-    return "FizzBuzz";
-  } else if (numero % 3 === 0) {
-    return "Fizz";
-  } else if (numero % 5 === 0) {
-    return "Buzz";
-  } else {
-    return numero;
-  }
-});
+const nomesCompletos = usuarios.map(usuario => `${usuario.nome} ${usuario.sobrenome}`);
 
-console.log(resultado);
+console.log(nomesCompletos);
+
